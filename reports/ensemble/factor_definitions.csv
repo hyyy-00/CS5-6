@@ -1,0 +1,6 @@
+﻿factor,calculation
+revenue_growth_yoy,Quarter revenue / revenue from the same fiscal quarter last year - 1
+operating_profitability,TTM operating income / average assets versus the same quarter last year
+cashflow_to_assets,TTM operating cash flow / average assets versus the same quarter last year
+debt_to_assets,Interest-bearing debt / total assets at the reporting date
+asset_growth_yoy,Current total assets / total assets four quarters earlier - 1

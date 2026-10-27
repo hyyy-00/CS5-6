@@ -1,0 +1,37 @@
+{
+  "rows": 17353,
+  "status": "agree_with_float_rounding",
+  "prediction_features_source": "original source/inputs/test40.csv; price-input factor fields are not used to regenerate ensemble scores",
+  "factors": [
+    {
+      "factor": "revenue_growth_yoy",
+      "maximum_absolute_difference": 2.220446049250313e-16,
+      "different_float_rows": 39,
+      "rank_differences": 0
+    },
+    {
+      "factor": "operating_profitability",
+      "maximum_absolute_difference": 0.0,
+      "different_float_rows": 0,
+      "rank_differences": 0
+    },
+    {
+      "factor": "cashflow_to_assets",
+      "maximum_absolute_difference": 0.0,
+      "different_float_rows": 0,
+      "rank_differences": 0
+    },
+    {
+      "factor": "debt_to_assets",
+      "maximum_absolute_difference": 4.440892098500626e-16,
+      "different_float_rows": 1047,
+      "rank_differences": 0
+    },
+    {
+      "factor": "asset_growth_yoy",
+      "maximum_absolute_difference": 4.440892098500626e-16,
+      "different_float_rows": 135,
+      "rank_differences": 0
+    }
+  ]
+}

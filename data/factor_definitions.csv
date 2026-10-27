@@ -1,0 +1,48 @@
+﻿factor,calculation
+ret_1d,ln(C(t) / C(t-1))
+ret_5d,ln(C(t) / C(t-5))
+ret_20d,ln(C(t) / C(t-20))
+ret_60d,ln(C(t) / C(t-60))
+ret_120d,ln(C(t) / C(t-120))
+momentum_20_5,ln(C(t-5) / C(t-20))
+overnight_gap,ln(O(t) / C(t-1))
+intraday_return,ln(C(t) / O(t))
+ema20_distance,C / EMA20 - 1
+ema60_distance,C / EMA60 - 1
+ema20_60_spread,EMA20 / EMA60 - 1
+rsi14_centered,(RSI14 - 50) / 50
+macd_hist_atr,MACD histogram / ATR14
+breakout_position_60,(C - Low60) / (High60 - Low60)
+realized_vol_5,std_5(ret_1d)
+realized_vol_20,std_20(ret_1d)
+vol_ratio_5_20,realized_vol_5 / realized_vol_20
+parkinson_vol_20,sqrt(mean_20(ln(H/L)^2) / (4 ln(2)))
+overnight_vol_20,std_20(overnight_gap)
+downside_vol_20,"sqrt(mean_20(min(ret_1d, 0)^2))"
+volume_zscore_20,(ln(V) - mean_20(ln(V))) / std_20(ln(V))
+volume_trend_5_20,mean_5(V) / mean_20(V) - 1
+amihud_illiq_20,mean_20(abs(ret_1d) / (raw Close * Volume))
+signed_volume_pressure_20,sum_20(sign(ret_1d) * V) / sum_20(V)
+close_location_value,(2C - H - L) / (H - L)
+body_range_ratio,(C - O) / (H - L)
+cs_rank_ret20,same-date percentile rank of ret_20d
+cs_rank_ret60,same-date percentile rank of ret_60d
+cs_rank_vol20,same-date percentile rank of realized_vol_20
+cs_rank_amihud20,same-date percentile rank of amihud_illiq_20
+trend_r2_20,OLS R² of adjusted close over the last 20 trading sessions
+return_autocorr_20,"corr(ret[t-19:t], ret[t-20:t-1])"
+volume_cv_20,"std_20(volume, ddof=1) / mean_20(volume)"
+return_volume_corr_20,"corr(simple return, log volume change) over 20 sessions"
+gap_followthrough_20,"corr(overnight gap, intraday return) over 20 sessions"
+revenue_growth_yoy,Quarter revenue / revenue from the same fiscal quarter last year - 1
+gross_margin_change_yoy,Current TTM gross margin minus TTM gross margin four quarters earlier
+operating_profitability,TTM operating income / average assets versus the same quarter last year
+cashflow_to_assets,TTM operating cash flow / average assets versus the same quarter last year
+debt_to_assets,Interest-bearing debt / total assets at the reporting date
+asset_growth_yoy,Current total assets / total assets four quarters earlier - 1
+macro_vix_level,Latest available FRED VIXCLS level
+macro_vix_change_5obs,VIXCLS less its value five valid observations earlier
+macro_yield_spread_10y_2y,(DGS10 - DGS2) / 100 on the same observation date
+macro_dgs10_change_5obs,(DGS10 - DGS10 five valid observations earlier) / 100
+target,"ln(AdjClose_week_end(t+1) / AdjClose_week_end(t)); next week's final trading-day adjusted Close divided by this week's final trading-day adjusted Close. Label only, not a model input."
+target2,"Classification of target: 0 if target < -3%; 1 if -3% <= target < -1%; 2 if -1% <= target <= 1%; 3 if 1% < target <= 3%; 4 if target > 3%. Label only, not a model input."

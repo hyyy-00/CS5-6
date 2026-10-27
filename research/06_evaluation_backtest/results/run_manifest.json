@@ -1,0 +1,16 @@
+{
+  "status": "completed_and_verified",
+  "model_series": 18,
+  "strategy_count": 15,
+  "summary_rows": 11340,
+  "phase_cases": 972,
+  "data_sha256": "26e234363e83f2eaefe0ba787b6909be0999f6d4405fbf6ef2e2c7cb8b918d97",
+  "raw_first": "2016-09-02",
+  "raw_last": "2026-08-28",
+  "signal_first": "2022-09-02",
+  "signal_last": "2026-08-21",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "independent_checks": 3506740
+}

@@ -1,0 +1,262 @@
+{
+  "mode": "historical_ensemble_backtest",
+  "attempt_id": "3849e192c18a430fbafee057ed084cd9",
+  "started_utc": "2026-10-26T05:41:52.370641+00:00",
+  "status": "passed",
+  "models_trained": 0,
+  "prediction_source": "external_validation/ensemble_ranker/predictions/stock_rankings.csv",
+  "prediction_sha256": "d8e219d6749031117add13e13d8fbea15abecec87e190a0c72e92ec3d340d007",
+  "price_sha256": "3ff2cbfd862ec7207157dc67675f5c4e28c5f7e9061ff8fa7fcfa24a134fdc39",
+  "native_prediction_rows": 13517,
+  "native_prediction_weeks": 366,
+  "common_rows": 8354,
+  "common_weeks": 210,
+  "cases_verified": 1,
+  "maximum_absolute_metric_error": 0.0,
+  "future_label_columns_used_for_trading": false,
+  "independent_accounting_checks": 9586,
+  "maximum_accounting_error": 2.842170943040401e-14,
+  "provenance": {
+    "prediction_mode": "loaded historical saved models; new inference, no training",
+    "models_loaded": 45,
+    "prediction_verification": {
+      "status": "passed",
+      "models_loaded": 45,
+      "models_trained": 0,
+      "rows": 13517,
+      "weeks": 366,
+      "maximum_score_error": 0.0,
+      "all_component_and_ensemble_predictions_identical": true,
+      "future_label_columns_used_for_prediction": false,
+      "manifest_sha256": "25e073f2d67d359a61c751c50f8ced010a38d8b07bd695027d13d5006dd02efe",
+      "historical_snapshots": [
+        {
+          "model_id": "model_1_w156_five_factors_refit_0156",
+          "rows": 705,
+          "sha256": "53b25ff0394b885174875bf5ae43fff1ab9126f79d9443ec51a393b9ae3305e8"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0182",
+          "rows": 809,
+          "sha256": "c5a564b0eeefc2f78bb979cee71ce5374a00f28765412ad476e6b677bc3070f1"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0208",
+          "rows": 859,
+          "sha256": "ff5295c8a29f231855f9030a24f4d024832ba9489b65f9ea6bd93958edb22c47"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0234",
+          "rows": 909,
+          "sha256": "1a8355ed9f90a669f8daab0f2603ac0f2d401da5c1bd7a294f7edef1e239023d"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0260",
+          "rows": 910,
+          "sha256": "841ddb0430a9339383360ba37d736b06b32da6884383809876292187499a37be"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0286",
+          "rows": 971,
+          "sha256": "089cce57945e23bd2cd607237365ddac364476a4b9bb6dc0796a458ea57ba8fd"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0312",
+          "rows": 997,
+          "sha256": "d03e13b6243197074c1911b7d0c49851ae90cba265867d52c3931f3a88e4ec2c"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0338",
+          "rows": 1037,
+          "sha256": "de06e71a32c004f6595ad2b738500dfbbbe668bf479f04a6a328bb5b394d0ab8"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0364",
+          "rows": 1040,
+          "sha256": "be8eff57f85d4f96063fd0b1c1883c21331b42cfe1606921d34236c0db0379e9"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0390",
+          "rows": 1040,
+          "sha256": "c2aa05b773a5583069c3138ba016b8cc7cef8b0997f98d41739c8a739b7f1af1"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0416",
+          "rows": 1040,
+          "sha256": "182f919856b4cd604ea1573badf1f4e3ed3e6263ebbb8bcef1845cce0bdc0601"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0442",
+          "rows": 1040,
+          "sha256": "f3d3b018827ceb65c1bdd54d482420816faaffe7dd0be335ce146c561cd3011b"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0468",
+          "rows": 1040,
+          "sha256": "7c1720af0b34b7a6f1953a5d3ad4fb38e5108969ba18f40583be467fc0f970be"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0494",
+          "rows": 1040,
+          "sha256": "1afcdb6dbbdbcd38f4cf0f3c35c1eb299874b706bcd974d4d371de657421652e"
+        },
+        {
+          "model_id": "model_1_w156_five_factors_refit_0520",
+          "rows": 80,
+          "sha256": "c628ba9d67c7a77fea09b3419109cb34982f5225a42dc07b6b37a84d62be9534"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0156",
+          "rows": 705,
+          "sha256": "6b2645b89f8251280c7650a810d9e3c332e53309b9fd004e66bd9ffaa5f30168"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0182",
+          "rows": 809,
+          "sha256": "b80c0ba3baad1244fda0790080b97117277a43ef0c1feddcd90ddc358c612d18"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0208",
+          "rows": 859,
+          "sha256": "172f58ad11fcbf0aa62fc487066b213ef1a58026180d9a8e8396475a5083a2ef"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0234",
+          "rows": 909,
+          "sha256": "7390e857084e4ae3d57b7e3a50a32f2fb28b9c7bb4626b571c4fcd4e3fb8f616"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0260",
+          "rows": 910,
+          "sha256": "17d929ed089166b2bcd5a6f3bae4c958aa5a9e1608a169cd982bc10622733a42"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0286",
+          "rows": 971,
+          "sha256": "a886de59ad295716d25e0c2f70de2a75ca7c6c0045b1402b3c403aaf14934cb8"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0312",
+          "rows": 997,
+          "sha256": "eab6ecc02472449d061f953a4723d88677b5a69aa9d387be75ab3a04f4cd85c4"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0338",
+          "rows": 1037,
+          "sha256": "e65f983aa4a5682414d0e53592542a6b80aca078740ecc1cc0d7f4e9defcd955"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0364",
+          "rows": 1040,
+          "sha256": "cd4ecd5f347c801ddbd4dad41acabba5c8cf5a7934d9a9bbf52909cc2ad91b77"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0390",
+          "rows": 1040,
+          "sha256": "debed956823da5094ea0e0b2f602d42c96f55b138c6d68b5f3f242618b29244f"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0416",
+          "rows": 1040,
+          "sha256": "d3d4fda00a7adbc51041fd1ea2692cf10e7713f2ec62306a75524b5b7a20d9fb"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0442",
+          "rows": 1040,
+          "sha256": "0feb6dc79c2cc3cc4e87ac7ce7346a517e0d948778faa53c01354952b5f634fe"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0468",
+          "rows": 1040,
+          "sha256": "2a83f04a5f0c5827d63bda93718c99996dae03f0049caba7063a123d1930220b"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0494",
+          "rows": 1040,
+          "sha256": "83c1e3af34be861339eb309c0faeb7d4141e8b541f98ee711447df76690e40ed"
+        },
+        {
+          "model_id": "model_2_w52_two_factors_refit_0520",
+          "rows": 80,
+          "sha256": "d9d119d5e366c18f2422d0ac9d766ac125acbf008aab71e38bffec1765e2c41a"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0156",
+          "rows": 705,
+          "sha256": "493a774d446f11fcd0b6da64327a7a3e7139f66cf0869d93f1cfd73377c332dc"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0182",
+          "rows": 809,
+          "sha256": "9b181ac081452f6db1a9889136ed5bafbd88fb54612ef6d00395be7573fd9df5"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0208",
+          "rows": 859,
+          "sha256": "90bc1052c98b842c8db25717730cd2d613bcc9e7a3e31c16abbcdc65b2c81e81"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0234",
+          "rows": 909,
+          "sha256": "7aa95e3e179eaecf94ee02abdcc133396b1ebe9e044c8b00720dca8e1768bad0"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0260",
+          "rows": 910,
+          "sha256": "c5b7a1ce50624d2d7e8778c16af94dac8d0b3d5bba242d641c2d610969473cd2"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0286",
+          "rows": 971,
+          "sha256": "6950c557c4f5f6b8407b442411f6aabc55bbc7789a38e24fe7fdbdf6e1faee0e"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0312",
+          "rows": 997,
+          "sha256": "4951daa394ba8a62a462faec2477fe7820874152774660796e58ea8c6e3628cb"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0338",
+          "rows": 1037,
+          "sha256": "d3eff88482120d94cf39b280b4b869ac70fdee718a7b2011d1b3318c8fd74b57"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0364",
+          "rows": 1040,
+          "sha256": "67fecbf3029bdf516a171987d644d9297551b469098a83e7021070b2a6de1c4d"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0390",
+          "rows": 1040,
+          "sha256": "4e9d3b1b7d74c2020fa32f82042273482b16e2b2be9f397c3e3699d3bc44d3cf"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0416",
+          "rows": 1040,
+          "sha256": "6ac4da0bb53da7aa382b14b12197f31ba5ed14abbde08ed55bdc0e569fda0a35"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0442",
+          "rows": 1040,
+          "sha256": "2fd87b078b6a367815cae8f5157630dab710e2f58fbe3421a1fc9a3165ea8ba3"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0468",
+          "rows": 1040,
+          "sha256": "3affef03d12835fd5101875aa77c7145c84dc6f7a7351127c4a9a7d1377c1bfe"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0494",
+          "rows": 1040,
+          "sha256": "5fe822433ddddb0a2d379ad2fa4a7a9aeb91d2504ea4fb7fea8b8d7f4e7c3e55"
+        },
+        {
+          "model_id": "model_3_w52_five_factors_regularized_refit_0520",
+          "rows": 80,
+          "sha256": "62a0e5680dde499192cb2d3d01bb0ad034a4fb4be66cb6ebee0646cb51e12355"
+        }
+      ]
+    }
+  },
+  "finished_utc": "2026-10-26T05:41:53.741430+00:00"
+}

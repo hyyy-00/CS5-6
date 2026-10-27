@@ -1,0 +1,53 @@
+{
+  "strategies": [
+    "Top5",
+    "Top10",
+    "Top5_PositiveScore",
+    "Top10_PositiveScore",
+    "Top5_NoLoss4w",
+    "Top10_NoLoss4w",
+    "Top5_NoLoss13w",
+    "Top10_NoLoss13w",
+    "Top5_RankWeighted",
+    "Top5_LowVol26w",
+    "Top5_RankRisk26w",
+    "Top5_Buffer10",
+    "Top5_Rebalance2w",
+    "Top5_Rebalance4w",
+    "Top5_Trend26w"
+  ],
+  "labels": {
+    "Top5": "Equal-weight Top5",
+    "Top10": "Equal-weight Top10",
+    "Top5_RankWeighted": "Rank-weighted Top5",
+    "Top5_PositiveScore": "Top5 positive score",
+    "Top10_PositiveScore": "Top10 positive score",
+    "Top5_NoLoss4w": "Top5 no loss over past 4 weeks",
+    "Top10_NoLoss4w": "Top10 no loss over past 4 weeks",
+    "Top5_NoLoss13w": "Top5 no loss over past 13 weeks",
+    "Top10_NoLoss13w": "Top10 no loss over past 13 weeks",
+    "Top5_LowVol26w": "Low-volatility weighted",
+    "Top5_RankRisk26w": "Rank-risk weighted",
+    "Top5_Buffer10": "Top-10 retention buffer",
+    "Top5_Rebalance2w": "Rebalance every 2 weeks",
+    "Top5_Rebalance4w": "Rebalance every 4 weeks",
+    "Top5_Trend26w": "Market trend filter"
+  },
+  "rules": {
+    "Top5_LowVol26w": "Take the top 5 predicted stocks that have a complete 26-week volatility history and weight them by inverse volatility, capped at 35% per stock; with fewer than 5 stocks the equity budget is count/5 and the rest stays in cash.",
+    "Top5_RankRisk26w": "From the same eligible pool take the top 5 and weight by (6 - rank) / 26-week standard deviation of weekly returns, capped at 35% per stock; with fewer than 5 stocks the equity budget is count/5.",
+    "Top5_Buffer10": "Start with the top 5; each week keep holdings that are still in the current top 10, fill empty slots by current rank, then rebalance to equal weights of 20% each.",
+    "Top5_Rebalance2w": "Buy the top 5 from cash on the first available signal and re-select equal weights every 2 calendar weeks; in between, holdings and cash drift naturally and no trades follow new ranks. A missing signal liquidates; a returning signal buys immediately and resets the rebalance clock.",
+    "Top5_Rebalance4w": "Same as above, rebalancing every 4 calendar weeks.",
+    "Top5_Trend26w": "Build an equal-weight return index from verifiable adjusted prices of the original universe up to the current week; buy the equal-weight Top5 when the index is above its 26-week moving average (including the current week), otherwise hold cash.",
+    "Consensus": "Equal-weight average of the weekly within-universe rank percentiles of the four model families for the same factor set; scores are rounded to 12 decimals to fix numerical ties, then ties break by ticker; only stocks and dates predicted by all four are used."
+  },
+  "cost_bps": [
+    0,
+    10,
+    25
+  ],
+  "windows_start_cash": true,
+  "consensus": "same-factor four-family percentile average; missing family means no consensus",
+  "positive_score": "literal prediction > 0; Ranker scores do not imply positive expected return"
+}

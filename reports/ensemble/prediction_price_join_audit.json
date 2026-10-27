@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "saved_models_replayed": 45,
+  "maximum_raw_score_error": 0,
+  "ensemble_formula_verified": true,
+  "native_rows": 13517,
+  "native_weeks": 366,
+  "native_first": "2019-08-30",
+  "native_last": "2026-08-28",
+  "native_min_stocks": 27,
+  "native_max_stocks": 40,
+  "common_rows": 8354,
+  "common_weeks": 210,
+  "prediction_source_sha256": "d8e219d6749031117add13e13d8fbea15abecec87e190a0c72e92ec3d340d007",
+  "price_source_sha256": "3ff2cbfd862ec7207157dc67675f5c4e28c5f7e9061ff8fa7fcfa24a134fdc39",
+  "models_retrained": false,
+  "hyperparameters_changed": false,
+  "labels_used_for_trading": false,
+  "factor_alignment_max_abs_error": 4.440892098500626e-16,
+  "factor_percentile_ranks_identical": true,
+  "factor_audit": "prepared/factor_input_alignment.json",
+  "original_rankic_max_abs_error": 0.0
+}

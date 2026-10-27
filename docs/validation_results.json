@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-26",
+  "status": "passed",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "xgboost": "3.4.1",
+      "exchange-calendars": "4.13.2"
+    },
+    "random_seed": 5703,
+    "training_threads": 1,
+    "version": "ensemble-training-v1"
+  },
+  "frozen_replay": {
+    "status": "passed",
+    "models_loaded": 45,
+    "models_trained": 0,
+    "prediction_rows": 13517,
+    "prediction_weeks": 366,
+    "maximum_prediction_error": 0.0,
+    "strategy": "Top5_NoLoss13w",
+    "window": "Common210 FullHistory",
+    "cases": 1,
+    "maximum_metric_error": 0.0,
+    "independent_accounting_checks": 9586,
+    "maximum_accounting_error": 2.842170943040401e-14,
+    "original_frozen_artifact_hashes": "unchanged"
+  },
+  "training_demonstration": {
+    "status": "passed",
+    "profile": "full",
+    "models_fitted": 45,
+    "components": [
+      "Model1_v1",
+      "Model2_v1",
+      "Model3_v1"
+    ],
+    "stages": [
+      "prepare",
+      "train"
+    ],
+    "save_load_score_check": "passed",
+    "external_predictions_or_backtests": false,
+    "source_files": {
+      "backtesting/external40/integer_backtest.py": "50fe30545eb4bfe0e569097d430ffbe82bdc59d54898f308424bc895d17df3a8",
+      "execution_status.py": "39be4f1dc476b55463654f371d867b2fa110a5c48689c2df4b2a78ab1e69bffc",
+      "external_validation/ensemble_ranker/code/ranker_core.py": "9c3ab116cad5c2ef31a1d0aae238cc5cbe41d59ec17b3451b1ebbd53965c0422",
+      "pipeline/__init__.py": "13f923db0f83c4105edafba4d0257a24deaac802b03655020bbc40932ecfc4ad",
+      "pipeline/contracts.py": "6189ab12841c87dc5d2cfb31caa7d8c1f5baffb04f2cdb1a488b529879145bc6",
+      "pipeline/inputs.py": "d71d87e62d7c88e22c0e289d02c52998dc7fb47c4e343307f24b2a967c4f3409",
+      "pipeline/learning.py": "a6d3d8dccd029e0c699ebbdb68c4fe5b9952daa47bdabd0f4fd6131bc634aa3b",
+      "pipeline/runner.py": "4207430b58d1aa0327895b444221afecb376a031c36824d648dae507b5784cc8",
+      "pipeline/trading.py": "282251ee63fa44a1a0866f25e0581ee6c9854229a6c285a33a2ea02a7ff4082c",
+      "requirements-repro.txt": "468c4b563f25ddf83aa8eed2a37ea4ecb061f24afa9a364d0b94b79578a2c4a9",
+      "run.py": "3fdcc3692600fa2bcdd337c5d817238921f7de509944c324abd74215898e666e",
+      "safecapital.py": "5842361d42248b4d2d11d381e5600a51c378e1352130e8863afa2f67e3b4aac3"
+    }
+  },
+  "regression_tests": {
+    "run": 80,
+    "passed": 77,
+    "skipped": 3,
+    "skip_reason": "Windows symlink privilege unavailable"
+  },
+  "python_syntax_files": 46
+}

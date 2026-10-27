@@ -1,0 +1,51 @@
+# Local Python environments, bytecode and tool caches.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Runtime output; keep the delivered explanation of runs/.
+/runs/*
+!/runs/README.md
+/outputs/
+/research/predictions/
+/research/*/outputs/
+/research/02_ridge/audit/
+/external_validation/standalone_ranker/outputs/
+/external_validation/ensemble_ranker/outputs/
+/backtesting/external40/results/
+/backtesting/external40/ensemble_extension/runs/
+/backtesting/external40/ensemble_extension/results/
+
+# Credentials, local configuration and editor/OS temporary files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+.aws/
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+__MACOSX/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~$*
+.idea/
+.vscode/
+
+# Deliberately retain frozen CSV inputs/predictions, saved model JSON files,
+# research/*/results/, reports/ and FINAL_OUTPUTS/ as delivery evidence.

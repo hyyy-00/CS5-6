@@ -1,0 +1,21 @@
+{
+  "mode": "frozen_model_inference",
+  "attempt_id": "6bda9f7a2b224442add7b54b45fc7b2b",
+  "started_utc": "2026-10-26T05:41:51.327528+00:00",
+  "status": "passed",
+  "stage": "complete",
+  "models_loaded": 45,
+  "models_trained": 0,
+  "prediction_rows": 13517,
+  "prediction_weeks": 366,
+  "backtest_cases": 1,
+  "files": {
+    "backtest/README.md": "67176c267ddcba5314705113c4b2a440f5aac64513fd7ed18db10d7595d1f27a",
+    "backtest/summary.csv": "35d8b0e3e0e0e6de0464f4313b61617e9e4e3a635f7fd944683b862d5ba870e2",
+    "backtest/verification.json": "442f290b12aad24e8c0c8bc0511521837b2292af3e5a05fa52894b242ede6548",
+    "backtest/weekly_capital.csv": "3682c58ee164eda5a8bda15affeb37a86eb88b11a893015f6150279d4fd85e10",
+    "prediction_verification.json": "f310bbcd2e532fcefc199ef4f5ae7bb6c0c21f4bdb080e5855bdf7dc9dd7c473",
+    "saved_model_predictions.csv": "db3c328811ad1f2bf0d0f302b03ff4d71a62bfe4d0b1e23aed24a7f5c1f0b0b0"
+  },
+  "finished_utc": "2026-10-26T05:41:53.757351+00:00"
+}

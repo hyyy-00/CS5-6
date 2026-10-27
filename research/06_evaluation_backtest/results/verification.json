@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "checks": 3506740,
+  "max_abs_difference": 2.6201263381153694e-14,
+  "summary_cases": 11340,
+  "scope": "direct price returns; every model/window/strategy position, drift and cost; all summary metrics at all fees; phase-zero equivalence; consensus scores; IC/RankIC/ICIR/MAE/RMSE"
+}

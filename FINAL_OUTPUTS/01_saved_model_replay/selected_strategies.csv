@@ -1,0 +1,2 @@
+"model","scope","window","strategy","weeks","annualized_return","sharpe","max_drawdown_signed","final_capital","fees","mean_cash_ratio"
+"Ensemble_equal_weight","Common210","FullHistory","Top5_NoLoss13w","210","10.4390%","0.5434211","-24.8781%","149330.61","14520.837","0.2312%"

@@ -1,0 +1,4 @@
+# Preserve delivered bytes across platforms: RELEASE_MANIFEST.json hashes bytes.
+# Disable line-ending conversion for all files, including text. Git can still
+# show textual diffs; -text does not mark every file as binary.
+* -text
